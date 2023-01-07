@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Slider |Dev Mode</title>
+
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <!-- CSS -->
+  <link rel="stylesheet" href="scss/styles.css">
+</head>
+<body>
+  <section class="swiper mySwiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="/images/user1.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Web Designer</span>
+          <span class="card__name">Thakur Namrata Chandrakant</span>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Culpa cum quo sequi eaque similique earum maiores ab, dolore in sapiente nisi ducimus numquam quis, officiis distinctio dicta dolor? Reprehenderit, maiores.</p>
+          <button class="card__btn">View More</button>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="/images/user2.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">UI Designer</span>
+          <h3 class="card__name">Thakur Pratik</h3>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Culpa cum quo sequi eaque similique earum maiores ab, dolore in sapiente nisi ducimus numquam quis, officiis distinctio dicta dolor? Reprehenderit, maiores.</p>
+          <button class="card__btn">View More</button>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="/images/user3.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">BlockChain Developer</span>
+          <span class="card__name">Surve Mandar Dilip</span>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Culpa cum quo sequi eaque similique earum maiores ab, dolore in sapiente nisi ducimus numquam quis, officiis distinctio dicta dolor? Reprehenderit, maiores.</p>
+          <button class="card__btn">View More</button>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="/images/user4.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Content Writing</span>
+          <span class="card__name">Patil Bhaghyashri Shriram</span>
+          <p class="card__text">Copied content from google github</p>
+          <button class="card__btn">View More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+       effect: "coverflow",
+       grabCursor: true,
+       centeredSlides: true,
+       slidesPerView: "auto",
+       coverflowEffect: {
+         rotate: 0,
+         stretch: 0,
+         depth: 300,
+         modifier: 1,
+         slideShadows: false,
+       },
+       pagination: {
+         el: ".swiper-pagination",
+       },
+     });
+   </script>
+  
+</body>
+</html>
